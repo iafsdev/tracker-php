@@ -33,32 +33,32 @@ class ProyectoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $proyecto)
     {
-        return "Detalle del proyecto $id";
+        return "Detalle del proyecto $proyecto";
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(string $proyecto)
     {
-        return "Formulario para editar el proyecto $id";
+        return "Formulario para editar el proyecto $proyecto";
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $proyecto)
     {
-        return "Proyecto $id actualizado";
+        return "Proyecto $proyecto actualizado";
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(string $proyecto)
     {
-        return "Proyecto $id eliminado";
+        return "Proyecto $proyecto eliminado";
     }
 }
