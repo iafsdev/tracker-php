@@ -11,7 +11,12 @@ class ProyectoController extends Controller
      */
     public function index()
     {
-        return 'Lista de proyectos';
+        $proyectos = [
+            ['id' => 1, 'nombre' => 'Sitio web', 'descripcion' => 'Rediseño del sitio'],
+            ['id' => 2, 'nombre' => 'App móvil', 'descripcion' => 'Primera versión'],
+        ];
+
+        return view('proyectos.index', ['proyectos' => $proyectos]);
     }
 
     /**
