@@ -24,7 +24,7 @@ class ProyectoController extends Controller
      */
     public function create()
     {
-        return 'Formulario para crear proyecto';
+        return view('proyectos.create');
     }
 
     /**
